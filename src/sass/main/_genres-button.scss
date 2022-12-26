@@ -1,0 +1,50 @@
+.genres {
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.genres-btn-title {
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.genre-button {
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  justify-content: center;
+  border: 1px solid var(--mainBlack);
+  color: var(--mainBlack);
+  background-color: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  transition: all $duration $timing-function;
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: var(--mainWhite);
+  }
+}
+
+.active-genre {
+  border: 1px solid var(--accent);
+  color: var(--mainWhite);
+  background-color: var(--accent);
+  transform: scale(1.15);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
